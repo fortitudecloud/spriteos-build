@@ -29,7 +29,7 @@
     "test": "npm run unit && npm run e2e",
     "start": "node build/start.js",
     "release": "npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder",
-    "pack:build": "webpack --config=build/webpack.app.config.js --env=production && electron-builder --linux AppImage",
+    "pack:build": "webpack --config=build/webpack.app.config.js --env=production && electron-builder --armv7l --linux AppImage",
     "build": "electron-builder --linux AppImage",
     "build:deb": "electron-builder --linux deb"    
   },
